@@ -9,23 +9,25 @@ Console.WriteLine("Привет! Это программа, которая по�
 Console.Write("Введите любое число: ");
 int numN = Convert.ToInt32(Console.ReadLine());
 int numNN = numN;
-if (numN < 100)
+if (numN < 9)
 {
-    numN = numN % 10;
-    Console.Write($"Вторая цифра слева введённого числа это {numN}");
+    Console.Write($"Введите двузначное число! Число {numN} маловато :/");
 }
 else
 {
-    // for (; numNN > 100;)
-    // {
-    //     numNN = numNN / 10;
-    //     break;      
-    // }
-    while (numN > 100)
+    if (numN < 100)
     {
-        Console.WriteLine(numN);
-        numN = numN / 10;
+        numN = numN % 10;
+        Console.Write($"Вторая цифра слева введённого числа это {numN}");
     }
-    numN = numN % 10;
-    Console.Write($"Вторая цифра слева введённого числа это - {numN}");
+    else
+    {
+        while (numN > 100)
+        {
+            Console.WriteLine(numN);
+            numN = numN / 10;
+        }
+        numN = numN % 10;
+        Console.Write($"Вторая цифра слева введённого числа это - {numN}");
+    }
 }
