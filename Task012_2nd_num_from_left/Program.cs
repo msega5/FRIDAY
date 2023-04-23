@@ -8,17 +8,24 @@
 Console.WriteLine("Привет! Это программа, которая показывает вторую цифру слева введённого числа");
 Console.Write("Введите любое число: ");
 int numN = Convert.ToInt32(Console.ReadLine());
+int numNN = numN;
 if (numN < 100)
 {
     numN = numN % 10;
-    ConsoleWrite($"Вторая цифра введённого числа это {numN}");
+    Console.Write($"Вторая цифра слева введённого числа это {numN}");
 }
 else
 {
-    for (; numN < 100;)
+    // for (; numNN > 100;)
+    // {
+    //     numNN = numNN / 10;
+    //     break;      
+    // }
+    while (numN > 100)
     {
+        Console.WriteLine(numN);
         numN = numN / 10;
-        break;
     }
-    ConsoleWrite($"Вторая цифра введённого числа это - {numN}");
+    numN = numN % 10;
+    Console.Write($"Вторая цифра слева введённого числа это - {numN}");
 }
