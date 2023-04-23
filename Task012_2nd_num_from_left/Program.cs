@@ -8,7 +8,6 @@
 Console.WriteLine("Привет! Это программа, которая показывает вторую цифру слева введённого числа");
 Console.Write("Введите любое число: ");
 int numN = Convert.ToInt32(Console.ReadLine());
-int numNN = numN;
 if (numN < 9)
 {
     Console.Write($"Введите двузначное число! Число {numN} маловато :/");
@@ -24,7 +23,6 @@ else
     {
         while (numN > 100)
         {
-            Console.WriteLine(numN);
             numN = numN / 10;
         }
         numN = numN % 10;
