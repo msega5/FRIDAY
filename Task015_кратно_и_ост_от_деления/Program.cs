@@ -17,3 +17,13 @@ else
 {
     Console.WriteLine($"Не кратно остаток {ost}");
 }
+
+//Второй вариант
+// Console.WriteLine("Введите 2 числа"); 
+// int num1 = Convert.ToInt32(Console.ReadLine()); 
+// int num2 = Convert.ToInt32(Console.ReadLine()); 
+// int div = num1 % num2; 
+// if( div == 0) 
+//     Console.WriteLine("Число кратно"); 
+// else 
+//     Console.WriteLine($"Число не кратно, остаток от деления =  {div}");
