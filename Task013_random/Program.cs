@@ -16,3 +16,7 @@ else if (num2 > num1)
     Console.WriteLine($"Наибольшее число {num2}");
 else
     Console.WriteLine($"Числа равны");
+
+//Цикл for вывод чисел массива
+for (int i = 1; i <= num; i = i + 3)
+    Console.Write($"{i} ");
