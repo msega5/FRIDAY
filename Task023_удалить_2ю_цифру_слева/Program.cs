@@ -9,22 +9,33 @@ double num = Convert.ToDouble(Console.ReadLine());
 int numInt = Convert.ToInt32(num);
 double numReal = 0;
 int numIntRes = 0;
+int sign = 1;
 
-//Промежуточный результат, разбивает число на целую и дробную часть
-numReal = num - numInt;
-Console.WriteLine($"Число {num} это целая часть {numInt} + {Math.Round(numReal, 10)}");
-
-//Поиск и удаление второй цифры числа (задача из семинара 2)
-int count = 0;
-int i = numInt;
-while (i > 0)
+if (num < 0) //Добавил проверку на отрицательные числа
 {
-    count++;
-    i = i / 10;
+    sign = (-1);
+    num = num * sign;
+    numInt = numInt * sign;
 }
-numIntRes = numInt / (Convert.ToInt32(Math.Pow(10, count - 1))) *
-                (Convert.ToInt32(Math.Pow(10, count - 2))) +
-                numInt % (Convert.ToInt32(Math.Pow(10, count - 2)));
 
-//Вывод числа
-Console.WriteLine(numIntRes + Math.Round(numReal, 10));
+numReal = num - numInt; //Находим дробную часть
+Console.WriteLine($"Число {num * sign} это целая часть {numInt * sign} + {Math.Round(numReal, 10)}"); //Вспомогательная информация для отображения состава числа
+
+if (num < 10)
+    Console.WriteLine($"Введите число побольше!");
+else
+{
+    //Поиск и удаление второй цифры числа (задача из семинара 2)
+    int count = 0;
+    int i = numInt;
+    while (i > 0)
+    {
+        count++;
+        i = i / 10;
+    }
+    numIntRes = numInt / (Convert.ToInt32(Math.Pow(10, count - 1))) *
+                    (Convert.ToInt32(Math.Pow(10, count - 2))) +
+                    numInt % (Convert.ToInt32(Math.Pow(10, count - 2)));
+    //Вывод числа
+    Console.WriteLine($"Получается число: {sign*(numIntRes + Math.Round(numReal, 10))}");
+}
