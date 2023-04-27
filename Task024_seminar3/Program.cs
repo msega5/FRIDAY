@@ -152,7 +152,7 @@
 // Console.WriteLine("Введите Координату y2 для точки B");
 // double y2 = Convert.ToDouble(Console.ReadLine());
 
-// Console.WriteLine($"Расстояние между двяму точками равно: {Math.Round(Rast(x1,y1,x2,y2),3)}");
+// Console.WriteLine($"Расстояние между двумя точками равно: {Math.Round(Rast(x1,y1,x2,y2),3)}");
 
 // Напишите программу, которая принимает на вход число (N) и выдаёт таблицу квадратов чисел 
 // от 1 до N.
