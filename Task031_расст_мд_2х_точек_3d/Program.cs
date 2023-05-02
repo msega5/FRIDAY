@@ -12,7 +12,7 @@ return Math.Sqrt((Math.Pow(x2 - x1,2)) + (Math.Pow(y2 - y1,2)) + (Math.Pow(z2 - 
 
 
 
-Console.WriteLine("Привет! Эта программа нахожит расстояние между точками в трёхмерном пространстве");
+Console.WriteLine("Привет! Эта программа находит расстояние между точками в трёхмерном пространстве");
 Console.WriteLine("Введите Координату x, y, z для точки А");
 double x1 = Convert.ToDouble(Console.ReadLine());
 double y1 = Convert.ToDouble(Console.ReadLine());
