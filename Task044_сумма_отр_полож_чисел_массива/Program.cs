@@ -5,8 +5,8 @@
 
 void FillArray(int[] array)
 {
-    for (int i =0; i<array.Length;i++)
-        array[i] = new Random().Next(-9,10);
+    for (int i = 0; i < array.Length; i++)
+        array[i] = new Random().Next(-9, 10);
 }
 
 void PrintArray(int[] array)
@@ -18,24 +18,24 @@ void PrintArray(int[] array)
 
 int[] FindSums(int[] array)
 {
-    int sum_p=0;
-    int sum_n=0;
+    int sum_p = 0;
+    int sum_n = 0;
     foreach (int item in array)
-        if (item>0)
-            sum_p+=item;
-        else    
-            sum_n+=item;
-    int[] result = {sum_p,sum_n};
+        if (item > 0)
+            sum_p += item;
+        else
+            sum_n += item;
+    int[] result = { sum_p, sum_n };
     return result;
 }
 
 
 Console.Clear();
-int [] array = new int[12];
+int[] array = new int[12];
 FillArray(array);
 System.Console.WriteLine("Сгенерировался такой массив");
 PrintArray(array);
-int [] rez = FindSums(array);
+int[] rez = FindSums(array);
 //PrintArray(FindSums(array));
 System.Console.WriteLine($"Сумма положительных элементов равна {rez[0]}");
 System.Console.WriteLine($"Сумма отрицательных элементов равна {rez[1]}");

@@ -2,10 +2,10 @@
 // 3, 5 -> 243 (3⁵)
 // 2, 4 -> 16
 
-int mathDgree(int numA, int numB)
+int mathDegree(int numA, int numB)
 {
     int res = 0;
-    res = numA
+    res = numA;
 }
 
 
