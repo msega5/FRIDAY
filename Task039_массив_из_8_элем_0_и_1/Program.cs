@@ -42,21 +42,21 @@
 // PrintArray(numbers);
 // Console.WriteLine($"Среднне врифмитическое массива: {Result(numbers)}");
 
-int FillArray(int[] arrayRandom)
-{
-    int length = arrayRandom.Length;
-    int index = 0;
-    while (index < length)
-    {
-        arrayRandom[index] = new Random().Next(0, 2);
-        index++;
-    }
-}
+// int FillArray(int[] arrayRandom)
+// {
+//     int length = arrayRandom.Length;
+//     int index = 0;
+//     while (index < length)
+//     {
+//         arrayRandom[index] = new Random().Next(0, 2);
+//         index++;
+//     }
+// }
 
 
 
 
-System.Console.Write("Введите размер массива: ");
-int arraySize = Convert.ToInt32(System.Console.ReadLine());
-arraySize(arraySize);
-Console.WriteLine();
+// System.Console.Write("Введите размер массива: ");
+// int arraySize = Convert.ToInt32(System.Console.ReadLine());
+// FillArray(arrayRandom);
+// Console.WriteLine();

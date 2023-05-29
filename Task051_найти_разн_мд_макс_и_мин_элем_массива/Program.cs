@@ -29,17 +29,17 @@ int[] FindMaxMin(int[] array)
     return result;
 }
 
-int[] FindMin(int[] array)
-{
-    int min = array[0];
-    for (int i = 1; i < array.Length; i++)
-    {
-        if (array[i] < min)
-            min = array[i];
-    }
-    int[] result = { min };
-    return result;
-}
+// int[] FindMin(int[] array)
+// {
+//     int min = array[0];
+//     for (int i = 1; i < array.Length; i++)
+//     {
+//         if (array[i] < min)
+//             min = array[i];
+//     }
+//     int[] result = { min };
+//     return result;
+// }
 
 
 
